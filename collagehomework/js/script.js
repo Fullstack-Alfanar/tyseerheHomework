@@ -47,10 +47,10 @@ function Students() {
 
 
 
-        sum += Number(elements[1].value);
+        sum += parseInt(elements[1].value);
         
-        elements[0].value = '';
-        elements[1].value = '';
+        elements[0].value = "";
+        elements[1].value = "";
 
 
         var counter = elements[2].getElementsByTagName("tr");
