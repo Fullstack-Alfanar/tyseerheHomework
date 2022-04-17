@@ -1,4 +1,5 @@
 let sum = 0;
+let arr=[];
 function Students() {
 
     let elements = [];
@@ -56,17 +57,21 @@ function Students() {
         var counter = elements[2].getElementsByTagName("tr");
 
 
-        elements[0] = document.getElementById("info");
-        elements[0].textContent = counter.length;
+        let x1 = document.getElementById("info");
+        x1.textContent = counter.length;
 
-        elements[1] = document.getElementById("avg");
-        elements[1].textContent = sum / counter.length;
+        let x2 = document.getElementById("avg");
+        x2.textContent = sum / counter.length;
 
+        let y={
+            studentName: elements[0].value,
+            studentScore: elements[1].value,
+            studentInfo: counter.length,
+            studentAverage: x2.textContent
+        };
 
+        arr.push(y);
 
-
-
+        localStorage.setItem('data',JSON.stringify(arr));
     }
-
-
 }
