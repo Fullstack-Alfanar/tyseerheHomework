@@ -50,8 +50,7 @@ function Students() {
 
         sum += parseInt(elements[1].value);
         
-        elements[0].value = "";
-        elements[1].value = "";
+        
 
 
         var counter = elements[2].getElementsByTagName("tr");
@@ -71,6 +70,8 @@ function Students() {
         };
 
         arr.push(y);
+        elements[0].value = "";
+        elements[1].value = "";
 
         localStorage.setItem('data',JSON.stringify(arr));
     }

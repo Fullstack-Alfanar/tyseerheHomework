@@ -1,0 +1,32 @@
+body{
+    background-color: #727272;
+}
+div{
+    margin-top: 10px;
+    padding-bottom: 100px;
+    
+}
+
+.div1 input{
+    display: flex;
+    margin-top: 10px;
+    
+}
+input{
+    padding: 5px;
+    background-color: rgb(86, 126, 126);
+}
+::placeholder{
+    color: black;
+}
+
+.div1 button{
+    margin-top: 10px;
+
+}
+
+button{
+    padding: 5px 15px;
+    background-color: rgb(86, 126, 126);
+    border-radius: 8px;
+}
