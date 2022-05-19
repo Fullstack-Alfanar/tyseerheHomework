@@ -1,5 +1,5 @@
 //question 1
-/*let Books = [
+let Books = [
     {
         Book_ID: "1",
         Book_Name: "Nordic Tales",
@@ -37,7 +37,7 @@ for (let index of item) {
         , `\nBook_Price: ${index.Book_Price}`
         , `\nBook_Author: ${index.Book_Author} \n--------------------------`);
 
-}*/
+}
 
 //------------------------------------------------
 

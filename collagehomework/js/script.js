@@ -12,7 +12,7 @@ function Students() {
         elements[0].style.borderColor = 'red';
         alert("please enter your name");
     }
-    else if (elements[1].value == "" || elements[1].value == null) {
+     if (elements[1].value == "" || elements[1].value == null) {
         elements[1].style.borderColor = 'red';
         alert("please enter your score");
     }
@@ -60,7 +60,7 @@ function Students() {
         x1.textContent = counter.length;
 
         let x2 = document.getElementById("avg");
-        x2.textContent = sum / counter.length;
+        x2.textContent = parseInt(sum / counter.length) ;
 
         let y={
             studentName: elements[0].value,
