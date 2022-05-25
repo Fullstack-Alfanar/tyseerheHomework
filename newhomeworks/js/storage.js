@@ -3,27 +3,27 @@ let saveit = document.getElementById("save");
 let loadit = document.getElementById("load");
 let mail = document.getElementById("email");
 
-saveit.addEventListener("click", ()=>{
+saveit.addEventListener("click", () => {
     document.cookie = mail.value;
     console.log(document.cookie);
 }); //mysave
 
-loadit.addEventListener("click", ()=>{
+loadit.addEventListener("click", () => {
     alert(mail.value);
 }); //myload
 
 //-----------------------------------------
 //question 2
-let saveit1 = document.getElementById("save1"); 
+let saveit1 = document.getElementById("save1");
 let loadit1 = document.getElementById("load1");
 let Phone = document.getElementById("tel");
 
-saveit1.addEventListener("click", ()=>{
+saveit1.addEventListener("click", () => {
     document.cookie = Phone.value;
     console.log(document.cookie);
 }); //mysave1
 
-loadit1.addEventListener("click", ()=>{
+loadit1.addEventListener("click", () => {
     alert(Phone.value);
 }); //myload1
 
@@ -46,7 +46,7 @@ else {
     arr = [];
 }
 
-btn.addEventListener("click", ()=>{
+btn.addEventListener("click", () => {
     if (
         myname.value.length > 2 && myname.value.length < 30 ||
         Phone1.value.length > 2 && Phone1.value.length < 30 ||
@@ -80,7 +80,7 @@ let btn1 = document.getElementById("save3");
 let btn2 = document.getElementById("search");
 
 let arr1 = [];
-btn1.addEventListener("click", ()=>{
+btn1.addEventListener("click", () => {
     if (txt.value != "" || txt.value != null) {
         arr1.push(txt.value);
         localStorage.setItem("local", JSON.stringify(arr1));
@@ -88,7 +88,7 @@ btn1.addEventListener("click", ()=>{
 
 }); //mysave3
 
-btn2.addEventListener("click", ()=>{
+btn2.addEventListener("click", () => {
     if (localStorage.getItem("local") === null) {
         alert("the localstorage is empty!");
     }

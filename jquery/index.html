@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/jquery/css/style.css">
+</head>
+
+<body>
+    <div class="div1">
+        <div><label>
+                <h3>First number:</h3>
+            </label></div>
+        <div><input type="text" name="" id="first"></div>
+    </div>
+    <div class="div2">
+        <div><label>
+                <h3>Second number:</h3>
+            </label></div>
+        <div><input type="text" name="" id="sec"></div>
+    </div>
+    <div>
+        <button id="btn">Fill List</button>
+        <select id="sel"></select>
+    </div>
+    <script src="/jquery/jquery-3.6.0.js"></script>
+    <script>
+        
+        $(document).ready(() => {
+            
+            $("#btn").click(() => {
+                let first = $("#first");
+                let Sec = $("#sec");
+                if (first.val() == "" || first.val() == null) {
+                    alert("please choose the first number");
+
+                } else if (Sec.val() == "" || Sec.val() == null) {
+                    alert("please choose the second number");
+                } else if (first.val() <= Sec.val()) {
+                    for (let i = first.val(); i <= Sec.val(); i++) {
+                        $("#sel").append($(`<option value="${i}">${i}</option>`));
+                    }
+                } else if (first.val() >= Sec.val()) {
+                    for (let i = Sec.val(); i <= first.val(); i++) {
+                        $("#sel").append($(`<option value="${i}">${i}</option>`));
+                    }
+                }
+                
+                
+            });
+            
+        });
+        
+
+
+    </script>
+</body>
+
+</html>
